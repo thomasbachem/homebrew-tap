@@ -1,8 +1,8 @@
 class GitEdit < Formula
   desc "Fast, efficient, and safe Git history rewrites for AI agents"
   homepage "https://github.com/thomasbachem/git-edit"
-  url "https://github.com/thomasbachem/git-edit/archive/refs/tags/v1.7.0.tar.gz"
-  sha256 "036cb1cda1718f2606c205bfc922b3f187340bc61424bbd3d53dd76b6bd2e8bb"
+  url "https://github.com/thomasbachem/git-edit/archive/refs/tags/v1.8.0.tar.gz"
+  sha256 "70b3ba0521f14f3fcbc19b9e953337266d5cbd4cceeb4e7f24dfeced33202426"
   license "MIT"
   head "https://github.com/thomasbachem/git-edit.git", branch: "main"
 
@@ -11,7 +11,7 @@ class GitEdit < Formula
   def install
     # `--selftest` sources its suite from beside the script, so both land in libexec and the
     # symlink leads `${0:A}` back there
-    libexec.install "git-edit", "selftest.zsh"
+    libexec.install "git-edit", "selftest"
     if OS.linux?
       inreplace libexec/"git-edit", "#!/bin/zsh", "#!#{formula_opt_bin("zsh")}/zsh"
     end
