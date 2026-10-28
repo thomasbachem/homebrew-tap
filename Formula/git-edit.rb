@@ -2,7 +2,7 @@ class GitEdit < Formula
   desc "Fast, efficient, and safe Git history rewrites for AI agents"
   homepage "https://github.com/thomasbachem/git-edit"
   url "https://github.com/thomasbachem/git-edit/archive/refs/tags/v1.10.0.tar.gz"
-  sha256 "765f5d536dc5559733dbcf35e0739400924954b9939d45562af0cc3572739ef9"
+  sha256 "94cb7437cb2467394775605128fd68fab34abbb3ac0401e6a709634a141bcfef"
   license "MIT"
   head "https://github.com/thomasbachem/git-edit.git", branch: "main"
 
